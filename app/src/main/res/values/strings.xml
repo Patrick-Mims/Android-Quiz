@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question_text">Sacramento is the Capital of California</string>
+    <string name="correct_answer">Go and it\'s perfect!</string>
+    <string name="wrong_answer">Sorry, that answer is incorrect. Please try again</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+</resources>
