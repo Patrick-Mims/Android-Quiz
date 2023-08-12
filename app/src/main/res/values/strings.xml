@@ -1,8 +1,18 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="next_button">Next</string>
     <string name="question_text">Sacramento is the Capital of California</string>
-    <string name="correct_answer">Go and it\'s perfect!</string>
-    <string name="wrong_answer">Sorry, that answer is incorrect. Please try again</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
+
+    <!-- Questions -->
+    <string name="question_africa">Africa is a large continent.</string>
+    <string name="question_asia">Asia has a large population.</string>
+    <string name="question_australia">Australia is a clean country.</string>
+    <string name="question_china">China is behind in technology.</string>
+    <string name="question_europe">Europe support Ukraine.</string>
+
+    <!-- Buttons -->
+    <string name="correct_answer">Correct</string>
+    <string name="wrong_answer">Incorrect</string>
 </resources>
