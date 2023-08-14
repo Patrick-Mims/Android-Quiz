@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -56,12 +57,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button nextButton = (Button) findViewById(R.id.next_button);
+        Button prevButton = (Button) findViewById(R.id.prev_button);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("UseCompatLoadingForDrawables")
             @Override
             public void onClick(View view) {
                 ImageView imageView = (ImageView) findViewById(R.id.img);
                 index = (index + 1) % item.size();
+                imageView.setImageDrawable(getResources().getDrawable(item.get(index).getIcon()));
+                nextQuestion();
+            }
+        });
+        prevButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("UseCompatLoadingForDrawables")
+            @Override
+            public void onClick(View view) {
+                ImageView imageView = (ImageView) findViewById(R.id.img);
+
+                if(index == 0) {
+                    index = 5;
+                }
+
+                index = (index - 1) % item.size();
+
                 imageView.setImageDrawable(getResources().getDrawable(item.get(index).getIcon()));
 
                 nextQuestion();
