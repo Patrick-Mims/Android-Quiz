@@ -79,14 +79,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswer(boolean userPressedTrue) {
+
         boolean answerIsTrue = item.get(index).isTrue();
 
         int messageId = 0;
 
         if(userPressedTrue == answerIsTrue) {
-            messageId = R.string.wrong_answer;
-        } else {
             messageId = R.string.correct_answer;
+        } else {
+            messageId = R.string.wrong_answer;
         }
 
         Toast.makeText(this, messageId, Toast.LENGTH_SHORT).show();
